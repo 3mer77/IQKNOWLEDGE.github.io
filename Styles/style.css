@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    margin-top: 180px;
+    background-color: cadetblue;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+
+header {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 1000;
+}
+
+.AppConatiner {
+    margin: 25px auto;
+    width: 850px;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+.AppConatiner .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #0075ff;
+    color: #fff;
+}
+
+.AppConatiner .info .counter span {
+    font-size: 18px;
+}
+
+.AppConatiner .question {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.AppConatiner .question h2 {
+    margin: 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+.AppConatiner .answers label {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.AppConatiner .answers {
+    padding-top: 5px;
+    text-align: right;
+}
+
+.AppConatiner .answers .answer {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.AppConatiner .answers .answer:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.AppConatiner .answers .answer input[type="Radio"]:checked + label {
+    color: #0075ff;
+}
+
+.AppConatiner  .next-btn {
+    display: block;
+    width: 80%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+}
+
+.result {
+
+    padding: 15px;
+    font-size: 20px;
+}
+
+.result span {
+    font-weight: bold;
+}
+
+.result span.good {
+
+    color: #0075ff;
+}
+
+.result span.bad {
+    color: red;
+    
+}
+
+.result span.perfect {
+    
+    color: rgb(18, 200, 18);
+}
+.bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width: 500px){
+
+    .AppConatiner {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .AppConatiner .question h2 {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .AppConatiner .info {
+        font-size: 12px;
+    }
+
+    .AppConatiner .answers label {
+        font-size: 16px;
+    }
+
+    .AppConatiner  .next-btn {
+        font-size: 18px;
+        padding: 5px;
+    }
+    
+
+}
+
+/* Select page styles here*/
+
+.card{
+    width: 23%;
+    margin: 0 0 40px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.go {
+    display: block;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    padding: 3px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+@media(max-width: 500px){
+
+    .card {
+        width: 45%;
+    }
+
+    .detail h2{
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width: 800px){
+
+    .card {
+        width: 45%;
+    }
+
+    .detail h2{
+        font-size: 28px;
+    }
+
+}

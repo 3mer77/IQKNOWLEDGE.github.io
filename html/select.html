@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="main-logo">
+            <h2>  مرحلة الاختيار </h2>
+        </div>
+    </header>
+
+    <section>
+        <div class="container container-card">
+
+            <div class="card" data-type="england">
+                <img src="../images/prem.jpg" alt="">
+                <button class="choose go">  اذهب </button>
+            </div>
+
+            <div class="card" data-type="france">
+                <img src="../images/france.png" alt="">
+                <button class="choose go">  اذهب </button>
+            </div>
+
+            <div class="card" data-type="saudi" >
+                <img src="../images/sau.png" data-type="saudi" alt="">
+                <button class="choose go">  اذهب </button>
+            </div>
+
+            <div class="card" data-type="spain">
+                <img src="../images/laliga.png" alt="">
+                <button class="choose go">  اذهب </button>
+            </div>
+
+            <div class="card" data-type="germen">
+                <img src="../images/germen.png" alt="">
+                <button class="choose go">  اذهب </button>
+            </div>
+
+            <div class="card"  >
+                <img src="../images/seria.png" alt="">
+                <button class="choose go">  اذهب </button>
+            </div>
+
+            <div class="card" data-type="champ">
+                <img src="../images/champs.jpeg" alt="">
+                <button class="choose go">  اذهب </button>
+            </div>
+
+            <div class="card" data-type="imdex" >
+                <img src="../images/random.png"alt ="">
+                <button class="choose go">  اذهب </button>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <script src="../javascript/france.js"></script>
+    
+    <script>
+
+        
+        
+        let btns = document.querySelectorAll(".choose");
+
+        btns.forEach( btn =>  {
+            btn.addEventListener("click", (event) => {
+
+                window.open(`../html/${btn.parentElement.dataset.type}.html`);
+            })
+        })
+    </script>
+</body>
+</html>
